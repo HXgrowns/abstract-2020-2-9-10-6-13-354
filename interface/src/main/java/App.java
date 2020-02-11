@@ -20,6 +20,6 @@ public class App {
                 transportations.add(transportation.getType());
             }
         }
-        return Arrays.toString(transportations.toArray()).replace("[","").replace("]","");
+        return String.join(", ", transportations);
     }
 }
